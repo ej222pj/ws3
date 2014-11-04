@@ -9,21 +9,21 @@ namespace BlackJack.model.rules
     {
         private const int g_maxScore = 21;
 
-        public string winRule(Player a_player, Dealer a_dealer) 
+        public string winRule(Player a_player, Dealer a_dealer, string[] gameWinner) 
         {
             if (a_player.CalcScore() > g_maxScore)
             {
-                return "dealer";
+                return gameWinner[0];
             }
             else if (a_dealer.CalcScore() > g_maxScore)
             {
-                return "player";
+                return gameWinner[1];
             }
             else if (a_player.CalcScore() >= a_dealer.CalcScore()) 
             {
-                return "player";
+                return gameWinner[1];
             }
-            return "dealer";
+            return gameWinner[0];
           
         }
     }

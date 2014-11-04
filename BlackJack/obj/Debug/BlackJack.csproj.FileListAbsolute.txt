@@ -13,3 +13,8 @@ C:\Users\Eric\Documents\GitHub\BlackjackWS3\BlackJack\obj\Debug\BlackJack.pdb
 C:\Users\Eric\Documents\GitHub\BlackjackWS3\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
 C:\Users\Eric\Documents\GitHub\BlackjackWS3\BlackJack\bin\Debug\BlackJack.exe
 C:\Users\Eric\Documents\GitHub\BlackjackWS3\BlackJack\bin\Debug\BlackJack.pdb
+C:\Users\ej222pj\Documents\GitHub\ws3\ws3\BlackJack\obj\Debug\BlackJack.exe
+C:\Users\ej222pj\Documents\GitHub\ws3\ws3\BlackJack\obj\Debug\BlackJack.pdb
+C:\Users\ej222pj\Documents\GitHub\ws3\ws3\BlackJack\bin\Debug\BlackJack.exe
+C:\Users\ej222pj\Documents\GitHub\ws3\ws3\BlackJack\bin\Debug\BlackJack.pdb
+C:\Users\ej222pj\Documents\GitHub\ws3\ws3\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
