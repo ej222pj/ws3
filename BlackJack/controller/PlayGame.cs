@@ -48,7 +48,7 @@ namespace BlackJack.controller
         {
             a_view.DisplayWelcomeMessage();
             doOutput(a_game.IsGameOver());
-            System.Threading.Thread.Sleep(15);
+            System.Threading.Thread.Sleep(1500);
         }
 
         public void doOutput(bool isGameOver)
