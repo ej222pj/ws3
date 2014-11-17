@@ -54,27 +54,24 @@ namespace BlackJack.view
             System.Console.WriteLine("");
         }
 
-        public void DisplayGameOver(string a_dealerIsWinner)
+        public void DisplayGameOver(bool a_dealerIsWinner)
         {
 
             System.Console.Write("GameOver: ");
             switch (a_dealerIsWinner)
             {
-                case "dealer":
+                case false:
                     System.Console.WriteLine("Dealer Won!");
                     break;
-                case "player":
+                case true:
                     System.Console.WriteLine("You Won!");
-                    break;
-                case "even":
-                    System.Console.WriteLine("It's Even!");
                     break;
                 default:
                     break;
             }
             
         }
-        public void doOutput(IEnumerable<model.Card> dealerHand, IEnumerable<model.Card> playerHand, int dealerScore, int playerScore, bool gameOver, string isDealerWinner)
+        public void doOutput(IEnumerable<model.Card> dealerHand, IEnumerable<model.Card> playerHand, int dealerScore, int playerScore, bool gameOver, bool isDealerWinner)
         {
             DisplayDealerHand(dealerHand, dealerScore);
             DisplayPlayerHand(playerHand, playerScore);

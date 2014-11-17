@@ -30,7 +30,7 @@ namespace BlackJack.model
             return m_dealer.IsGameOver();
         }
 
-        public string IsDealerWinner()
+        public bool IsDealerWinner()
         {
             return m_dealer.IsDealerWinner(m_player, m_dealer);
         }

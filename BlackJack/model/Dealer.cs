@@ -70,10 +70,9 @@ namespace BlackJack.model
             return false;
         }
 
-        public string IsDealerWinner(Player a_player, Dealer a_dealer)
+        public bool IsDealerWinner(Player a_player, Dealer a_dealer)
         {
-            string[] gameWinner = { "dealer", "player", "even" };
-            return m_WinRule.winRule(a_player, a_dealer, gameWinner);
+            return m_WinRule.winRule(a_player, a_dealer);
         }
 
         public bool IsGameOver()

@@ -14,6 +14,6 @@ namespace BlackJack.view
         bool GetActionStand(int input);
         bool GetActionQuit(int input);
         void DisplayCard(model.Card a_card);
-        void doOutput(IEnumerable<model.Card> dealerHand, IEnumerable<model.Card> playerHand, int dealerScore, int playerScore, bool gameOver, string a_dealerIsWinner);
+        void doOutput(IEnumerable<model.Card> dealerHand, IEnumerable<model.Card> playerHand, int dealerScore, int playerScore, bool gameOver, bool a_dealerIsWinner);
     }
 }

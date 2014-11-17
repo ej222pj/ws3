@@ -42,19 +42,16 @@ namespace BlackJack.view
         {
             DisplayHand("Croupier", a_hand, a_score);
         }
-        public void DisplayGameOver(string a_dealerIsWinner)
+        public void DisplayGameOver(bool a_dealerIsWinner)
         {
             System.Console.Write("Slut: ");
             switch (a_dealerIsWinner) 
             {
-                case "dealer":
+                case false:
                     System.Console.WriteLine("Croupiern Vann!");
                     break;
-                case "player":
+                case true:
                     System.Console.WriteLine("Du vann!");
-                    break;
-                case "even":
-                    System.Console.WriteLine("Det blev lika!");
                     break;
                 default:
                     break;
@@ -71,7 +68,7 @@ namespace BlackJack.view
             System.Console.WriteLine("Poäng: {0}", a_score);
             System.Console.WriteLine("");
         }
-        public void doOutput(IEnumerable<model.Card> dealerHand, IEnumerable<model.Card> playerHand, int dealerScore, int playerScore, bool gameOver, string isDealerWinner)
+        public void doOutput(IEnumerable<model.Card> dealerHand, IEnumerable<model.Card> playerHand, int dealerScore, int playerScore, bool gameOver, bool isDealerWinner)
         {
             DisplayDealerHand(dealerHand, dealerScore);
             DisplayPlayerHand(playerHand, playerScore);

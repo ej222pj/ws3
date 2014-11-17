@@ -48,7 +48,7 @@ namespace BlackJack.controller
         {
             a_view.DisplayWelcomeMessage();
             doOutput(a_game.IsGameOver());
-            System.Threading.Thread.Sleep(1500);
+            System.Threading.Thread.Sleep(1);
         }
 
         public void doOutput(bool isGameOver)
@@ -59,7 +59,7 @@ namespace BlackJack.controller
             }
             else
             {
-                a_view.doOutput(a_game.GetDealerHand(), a_game.GetPlayerHand(), a_game.GetDealerScore(), a_game.GetPlayerScore(), false, "dealer");
+                a_view.doOutput(a_game.GetDealerHand(), a_game.GetPlayerHand(), a_game.GetDealerScore(), a_game.GetPlayerScore(), false, false);
             }
         }
     }
